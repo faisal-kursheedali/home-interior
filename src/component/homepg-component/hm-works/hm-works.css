@@ -1,0 +1,48 @@
+.home-center-txt{
+    text-align: center;
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: black;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.home-cmpny-works-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.home-cmpny-works{
+    margin:  1rem;
+}
+.home-cmpny-work-icn{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.home-cmpny-work-icn:hover{
+    font-size: 2.1rem;
+}
+.home-cmpny-work-txt{
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
+.home-cmpny-works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    padding: 1rem;
+    color: green;
+    /* color: lightgreen; */
+    /* color: lightskyblue; */
+    /* color: lightblue; */
+    border: 1px solid green;
+    /* border: 1px solid lightskyblue; */
+    /* border: 1px solid lightblue; */
+    border-radius: .5rem;
+}
+

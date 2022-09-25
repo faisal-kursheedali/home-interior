@@ -1,0 +1,42 @@
+.home-emply-container{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home-emply-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 270px;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 2rem;
+    border-radius: .5rem;
+    min-height: 210px;
+
+}
+.home-emply-img{
+    width: 75%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-width: 150px;
+    object-fit: cover;
+}
+.home-emply-detail{
+    margin-top: 1rem;
+    text-align: center;
+}
+.home-emply-name{
+    color: brown;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+}
+.home-emply-position{
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}

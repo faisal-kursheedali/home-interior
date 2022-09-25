@@ -1,0 +1,34 @@
+.prod-releated-list{
+    padding-left: 0px;
+    list-style: none;
+}
+.prod-releated-list-item{
+    width: 100%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+}
+.prod-releated-component{
+ margin: 3rem auto;  
+ display: flex;
+ flex-direction: column; 
+}
+.prod-releated-component-head{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.prod-releated-more-btn{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background: navy;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: max-content;
+    align-self: center;
+    cursor: pointer;
+
+}

@@ -1,0 +1,11 @@
+.shop-container{
+    display: flex;
+    width: 100%;
+}
+.shop-filter-container{
+    width: 30%;
+    height: 100vh;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: rgb(53, 52, 52);
+}
