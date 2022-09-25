@@ -1,0 +1,88 @@
+.auth-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+.auth-logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.5rem;
+}
+.auth-brand{
+    margin-left: 6px;
+    color: #c1d72e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.auth-content{
+    margin-top: 1.5rem;
+    padding: 2rem;
+    max-width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.auth-head-txt,.auth-sub-txt{
+text-align: center;
+}
+.auth-head-txt{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.auth-sub-txt{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.auth-input-box{
+    margin-top: 1rem;
+}
+.auth-input{
+    outline: none;
+}
+.auth-input-head{
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.auth-remberme{
+    margin-top: .5rem;
+}
+.auth-checkbox-head{
+    cursor: pointer;
+    font-weight: 600;
+}
+.auth-btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.auth-btn{
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    margin-left: 6px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+}
+.auth-btn-secondary{
+    border: 1px solid navy;
+    color: navy;
+}
+.auth-btn-primary{
+    background-color: navy;
+    color: white;
+}
+.auth-end-txt-container{
+    margin-top: 1.5rem;
+    text-align: center;
+
+}
+.auth-end-txt{
+    font-size: 1.05rem;
+    margin-top: .5rem;
+}
+.auth-link{
+    color: navy;
+}

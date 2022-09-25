@@ -1,0 +1,15 @@
+.cart-container{
+    display: flex;
+    width: 100%;
+
+}
+.cart-checkout-box{
+    position: sticky;
+    top: 0px;
+    width: 30%;
+    height: max-content;
+    
+}
+.cart-checkout-box-mobile{
+    display: none;
+}

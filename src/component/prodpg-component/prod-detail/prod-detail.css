@@ -1,0 +1,43 @@
+.prod-detail-component{
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 1rem;
+}
+.prod-detail-img{
+   width: 50%;
+}
+.prod-detail-content{
+   padding: 1.5rem;
+}
+.prod-detail-name{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.prod-detail-desc{
+    font-size: 1.2rem;
+
+}
+.prod-detail-price{
+    font-weight: 700;
+    color: green;
+    font-size: 1.3rem;
+}
+.prod-detail-btn-cart,.prod-detail-btn-wishlist{
+    padding: .5rem  2rem;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.prod-detail-btn-cart{
+    background-color: navy;
+    color: white;
+    padding: 10px 34px;
+}
+.prod-detail-btn-wishlist{
+    border: 1px solid navy;
+    color: navy;
+    background-color: white;
+}

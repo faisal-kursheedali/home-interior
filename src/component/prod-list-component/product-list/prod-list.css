@@ -1,0 +1,14 @@
+
+.prod-list-content{
+    /* width: 100%; */
+    height: 100%;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+.prod-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    list-style: none;
+}

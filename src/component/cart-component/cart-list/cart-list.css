@@ -1,0 +1,11 @@
+.cart-list-containe{
+    width: 100%;
+}
+.cart-list{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 2rem;
+}
+.cart-list-item{
+    margin: 1rem auto;
+}

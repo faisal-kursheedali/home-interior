@@ -1,0 +1,41 @@
+.prod-rel-card-component{
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    /* max-width: 600px; */
+    height: 100px;
+    justify-content: flex-start;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.prod-rel-card-img{
+    max-width: 200px;
+}
+.prod-rel-card-content{
+    padding:1rem;
+}
+.prod-rel-card-name{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.prod-rel-card-price{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: green;
+}
+.prod-rel-card-input{
+    display: flex;
+    margin: .5rem auto;
+
+}
+.prod-rel-card-cart,.prod-rel-card-wishlist{
+    color: navy;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.prod-rel-card-wishlist{
+    color: red;
+    margin-left: 16px;
+}
