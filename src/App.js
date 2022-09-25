@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import "./App.css";
 import { loadAuth } from "./app/feature/auth";
 import { Footer, Nav } from "./component";
