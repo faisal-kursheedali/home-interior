@@ -8,7 +8,14 @@
 .prod-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding-left: 0px;
+    margin-left: .5rem;
     list-style: none;
+}
+@media (max-width:640px) {
+    .prod-list{
+        justify-content: center;
+        margin-left: 0px;
+    }
 }

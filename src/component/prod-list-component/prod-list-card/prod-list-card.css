@@ -12,6 +12,8 @@
     width: 100%;
     margin-bottom: 8px;
     border-radius: .3rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 .prod-list-card-wishlist,.prod-list-card-cart{
     display: flex;

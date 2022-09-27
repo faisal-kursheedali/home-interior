@@ -39,3 +39,12 @@
     color: red;
     margin-left: 16px;
 }
+.prod-rel-card-cart-remove,.prod-rel-card-wishlist-remove{
+    color: gray;
+}
+@media (max-width:650px) {
+    .prod-rel-card-component{
+        flex-direction: column;
+        height: max-content;
+    }
+}

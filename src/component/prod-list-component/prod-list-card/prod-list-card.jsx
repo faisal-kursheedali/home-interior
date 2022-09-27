@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import "./prod-list-card.css";
 import { useNavigate } from 'react-router-dom';
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai"
@@ -6,6 +6,7 @@ import { BsFillCartFill, BsCart2 } from "react-icons/bs"
 import Rating from '../../rating/rating';
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, addToWishlist, removeFromCart, removeFromWishlist } from '../../../app/actions/product';
+import { setAuthMsg } from '../../../app/feature/auth';
 
 
 const ProdListCard = ({ data }) => {
@@ -15,8 +16,8 @@ const ProdListCard = ({ data }) => {
     const [hover, setHover] = useState(false);
     const navigate = useNavigate();
 
-    const [cart, setCart] = useState(state.cart.find(i => i._id === data._id));
-    const [wishlist, setWishlist] = useState(state.wishlist.find(i => i._id === data._id));
+    const [cart, setCart] = useState(state.cart.find(i => i._id === data._id?true:false));
+    const [wishlist, setWishlist] = useState(state.wishlist.find(i => i._id === data._id?true:false));
 
     return (
         <>
@@ -45,7 +46,9 @@ const ProdListCard = ({ data }) => {
 
                                                 dispatch(addToWishlist(data));
                                                 setWishlist(prev => prev = true);
-                                            }
+                                            }else{
+                                                dispatch(setAuthMsg({content:"need to login",type:"error"}))
+                                              }
                                         }} />
                                     }
 
@@ -69,7 +72,9 @@ const ProdListCard = ({ data }) => {
 
                                                     dispatch(addToCart(data));
                                                     setCart(prev => prev = true);
-                                                }
+                                                }else{
+                                                    dispatch(setAuthMsg({content:"need to login",type:"error"}))
+                                                  }
                                             }}
                                         />
                                     }
@@ -81,9 +86,9 @@ const ProdListCard = ({ data }) => {
 
                 {/* </>): ""
                         } */}
-
-                <img className="prod-list-card-img" src={data.img} />
-                <div className="prod-list-card-content">
+                
+                <img className="prod-list-card-img" alt='' src={data.img} onClick={()=>navigate(`/product${data._id}`,{state:data})} />
+                <div className="prod-list-card-content" onClick={()=>navigate(`/product${data._id}`,{state:data})}>
                     <div className="prod-list-card-name">{data.name}</div>
                     <div className="prod-list-card-price">{data.price}</div>
                     <div className="prod-list-card-rating">

@@ -1,11 +1,16 @@
 .home-banner-container{
     display: flex;
     margin: 2rem;
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .home-banner-img{
     width: 50%;
     object-fit: cover;
+    max-height: 400px;
+    max-width: 600px;
+    min-width: 200px;
+    aspect-ratio: 1/1;
 }
 .home-banner-content{
     display: flex;
@@ -30,6 +35,8 @@
     font-size: 1.1rem;
     color: navy;
     font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
 
 }
 @media (max-width:700px) {

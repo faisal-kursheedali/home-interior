@@ -1,8 +1,11 @@
 .cart-container{
     display: flex;
     width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
 
 }
+
 .cart-checkout-box{
     position: sticky;
     top: 0px;
@@ -12,4 +15,23 @@
 }
 .cart-checkout-box-mobile{
     display: none;
+}
+.cart-empty-img-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cart-empty-img{
+    width: 600px;
+    max-width: 200px;
+    max-width: 100%;
+}
+
+@media (max-width:850px) {
+    .cart-container{
+        flex-direction: column-reverse;
+    }
+    .cart-checkout-box{
+        position: relative;
+    }
 }

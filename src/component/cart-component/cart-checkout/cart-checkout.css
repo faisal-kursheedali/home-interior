@@ -34,3 +34,12 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
+.cart-co-share{
+    margin-top: .5rem;
+    display:flex;
+    color: green;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+}

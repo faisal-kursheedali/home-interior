@@ -16,9 +16,7 @@ const ProdReleated = ({data}) => {
         {
           arr.map(i=>{
             return(
-              <li className="prod-releated-list-item" key={i._id} onClick={
-                ()=>navigate(`/product${i._id}`,{state:{detail:i,releated:data.filter(j=>j!==i)}})
-              }>
+              <li className="prod-releated-list-item" key={i._id}>
                 <ProdRelCard data={i}/>
               </li>
             )

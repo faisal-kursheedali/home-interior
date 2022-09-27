@@ -19,7 +19,7 @@ const Login = () => {
   return (
     <div className="auth-container">
       <div className="auth-logo">
-        <img className="auth-logo-img" src={`${window.location.origin}/assets/logo.webp`}/>
+        <img className="auth-logo-img" alt='' src={`${window.location.origin}/assets/logo.webp`}/>
         <span className="auth-brand">Interior</span>
       </div>
       <div className="auth-content">
@@ -57,7 +57,7 @@ const Login = () => {
       </div>
       <div className="auth-end-txt-container">
         <div className="auth-end-txt">
-          if you <a href="#" className="auth-link">forget password</a>
+          if you <a href="/forgetpassword" className="auth-link">forget password</a>
         </div>
         <div className="auth-end-txt">
           if you dont have account <a href="/signup" className="auth-link">signup</a>
@@ -85,7 +85,7 @@ export default Login
   // </div>
 
 
-  {/* <FormComp head={"Login"} sub={"Enter the vale to login"} input={[
+  /* <FormComp head={"Login"} sub={"Enter the vale to login"} input={[
     {
       headTxt:"name",
       placeholder:"enter the name here",
@@ -118,4 +118,4 @@ export default Login
       
     ]
   }
-  /> */}
+  /> */
