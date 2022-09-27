@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./prod-list.css"
 
 import ProdListCard from '../prod-list-card/prod-list-card'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
+import FilterFnc from '../product-filter/filter'
 
 const ProdList = ({ data }) => {
-  const navigate=useNavigate();
-  // const [hover, setHover] = useState(new Array(data.length).fill(false));
-  // console.log(hover);
+  // const navigate=useNavigate();
+  const newData = FilterFnc(data);
+  
   return (
     <>
       <div className="prod-list-container">
@@ -15,13 +16,13 @@ const ProdList = ({ data }) => {
         <div className="prod-list-content">
           <ul className="prod-list">
             {
-              data.map((i,index) => {
-
+              newData.map((i) => {
+                
+                // 
+                
                 return (
                   <>
-                    <li className="prod-list-item" key={i._id}
-                    // onClick={()=>navigate(`/product${i._id}`,{state:{detail:i,releated:data.filter(j=>j!==i)}})}
-                    >
+                    <li className="prod-list-item" key={i._id} >
                       <ProdListCard data={i} />
                     </li>
                   </>

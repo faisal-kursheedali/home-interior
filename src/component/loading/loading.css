@@ -1,0 +1,23 @@
+.loading-container{
+    display: flex;
+    max-height: 60px;
+    max-width:150px;
+    padding: .5rem;
+    background-color: #f1f2f3;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.loading-box{
+    max-width: max-content;
+    display: flex;
+
+}
+.loading-img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.loading-content-box{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}

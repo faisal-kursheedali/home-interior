@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./hm-offer.css"
 
 const HomeOffer = ({
@@ -9,6 +10,7 @@ const HomeOffer = ({
     offerArr,
 
 }) => {
+  const navigate=useNavigate();
     const givenColor=offerAlertColor?offerAlertColor:"red"
   return (
     <>
@@ -29,10 +31,12 @@ const HomeOffer = ({
           </div>
           <div className="home-offer-card-container">
             {
-              offerArr.map((i,index)=>{
+              offerArr.map((i)=>{
                 return(
-                  <div className="home-offer-card" key={index}>
-              <img src={i} alt="" className="home-offer-card-img" />
+                  <div className="home-offer-card" key={i._id} onClick={()=>{
+                    navigate(`/product${i._id}`,{state:i})
+                  }}>
+              <img src={i.img} alt="" className="home-offer-card-img" />
             </div>
                 )
               })

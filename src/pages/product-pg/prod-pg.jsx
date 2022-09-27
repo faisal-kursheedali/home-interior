@@ -5,11 +5,11 @@ import { ProdPgComp } from '../../component';
 
 const ProductPg = () => {
     const location=useLocation();
-    const data=location.state.detail;
-    const releated=location.state.releated;
+    const data=location.state;
+    // const releated=location.state.releated;
   return (
       <>
-    <ProdPgComp detail={data} releated={releated}/>
+    <ProdPgComp data={data} />
       </>
     )
 }

@@ -2,6 +2,7 @@
     display: flex;
     padding: 1rem;
     max-height: 200px;
+    overflow-x: hidden;
     /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
     /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
     /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -15,6 +16,7 @@
 }
 .cart-card-content{
     width: 80%;
+    max-width: 400px;
     padding: 1rem;
 }
 .cart-card-name{
@@ -45,4 +47,26 @@
     max-width: 100px;
     padding: .2rem;
     font-weight: 600;
+}
+.cart-card-btn{
+    display: flex;
+    margin-top: 8px;
+}
+.cart-card-remove-btn{
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width:425px) {
+    .cart-card-container{
+        flex-direction: column;
+        max-height: max-content;
+        
+    }
+    .cart-card-img{
+        width: 100%;
+    }
+    .cart-card-content{
+        width: 100%;
+    }
 }

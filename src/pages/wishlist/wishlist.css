@@ -1,0 +1,14 @@
+.wishlist-container{
+    min-height: 100vh;
+    max-height: max-content;
+}
+.wishlist-empty-img-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.wishlist-empty-img{
+    width: 600px;
+    max-width: 200px;
+    max-width: 100%;
+}

@@ -1,3 +1,4 @@
+import Alert from "./alert/alert";
 import CartCard from "./cart-component/cart-card/cart-card";
 import CartCheckout from "./cart-component/cart-checkout/cart-checkout";
 import CartCheckoutMob from "./cart-component/cart-checkout/cart-checkout-mobile";
@@ -11,6 +12,7 @@ import HomePgEmply from "./homepg-component/hm-emply/hm-emply";
 import HomemHeader from "./homepg-component/hm-header/hm-header";
 import HomeOffer from "./homepg-component/hm-offer/hm-offer";
 import HomePgWorks from "./homepg-component/hm-works/hm-works";
+import Loading from "./loading/loading";
 import Nav from "./nav/nav";
 import ProdListCard from "./prod-list-component/prod-list-card/prod-list-card";
 import ProdShop from "./prod-list-component/prod-shop/prod-shop";
@@ -21,6 +23,7 @@ import ProdPgComp from "./prodpg-component/prod-pg/prod-pg";
 import ProdRelCard from "./prodpg-component/prod-releated-card/prod-rel-card";
 import ProdReleated from "./prodpg-component/prod-releated/prod-releated";
 import Rating from "./rating/rating";
+import SideNav from "./side-nav/side-nav";
 export {
     HomeOffer,
     HomemHeader,
@@ -45,6 +48,9 @@ export {
     Rating,
     ProdRelCard,
     FormComp,
+    Loading,
+    Alert,
+    SideNav,
     
     
     

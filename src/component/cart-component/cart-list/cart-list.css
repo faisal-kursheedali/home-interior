@@ -9,3 +9,15 @@
 .cart-list-item{
     margin: 1rem auto;
 }
+@media (max-width:850px) {
+    .cart-list{
+        margin-left: 0px;
+        margin: 1rem;
+    } 
+}
+/* @media (max-width:850px) {
+    .cart-list{
+        margin-left: 1rem;
+        margin: .5rem;
+    }
+} */
