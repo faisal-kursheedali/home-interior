@@ -16,7 +16,7 @@ export const users = [
     },
     email: "adarshbalika@gmail.com",
     password: "adarshbalika",
-    recNo:1001,
+    recNo:"1001",
     createdAt: formatDate(),
     updatedAt: formatDate(),
     coupon:["50","60","100"]

@@ -14,7 +14,7 @@ const Login = () => {
     if (state.status) {
       navigate(location.state||"/",{replace:true});
     }
-  }, [state.status]);
+  }, [navigate,state.status]);
   
   return (
     <div className="auth-container">

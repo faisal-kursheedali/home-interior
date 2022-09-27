@@ -65,7 +65,7 @@ export const recoveryHandeler = function (schema, request) {
         }
       );
     }
-    if (recNo == foundUser.recNo) {
+    if (recNo === foundUser.recNo) {
       const encodedToken = sign(
         { _id: foundUser._id, email },
         process.env.REACT_APP_JWT_SECRET
