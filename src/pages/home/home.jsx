@@ -29,7 +29,7 @@ const Home = () => {
 } 
   const offer = state.allProducts.filter(i => i.offer === true && i);
  
-  console.log(Math.floor(randomNumber(0,offer.length)));
+  // console.log(Math.floor(randomNumber(0,offer.length)));
   // const random =Math.floor((Math.random() * (offer.length - 0 + 1)) + min);
   return (
     <>

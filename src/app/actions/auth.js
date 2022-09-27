@@ -21,11 +21,11 @@ export const emailRecover=createAsyncThunk("auth/emailRecover",async(loginValue,
             email:auth.email,
             recNo:auth.recNo 
         });
-        console.log(res);
+        // console.log(res);
         return res.data
         
     } catch (error) {
-          console.log(error);
+        //   console.log(error);
         return error.message;
       }
 })

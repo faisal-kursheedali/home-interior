@@ -30,7 +30,7 @@ function App() {
   useEffect(()=>{
     
     setAlert(true);
-      console.log(prodState.msg);
+      // console.log(prodState.msg);
     // setAlertMsg(prev=>{
     //   prev.content=prodState.msg.content;
     //   prev.type=prodState.msg.type;
@@ -45,7 +45,7 @@ function App() {
   },[dispatch,prodState.showMsg===true])
   useEffect(()=>{
     setAlert(true);
-      console.log(authState.msg);
+      // console.log(authState.msg);
     // setAlertMsg(prev=>{
     //   // prev.content=authState.msg.content;
     //   // prev.type=authState.msg.type;
