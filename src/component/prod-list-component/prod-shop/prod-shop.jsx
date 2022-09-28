@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import ProdFilter from '../product-filter/prod-filter'
 import ProdList from '../product-list/prod-list'
 import "./prod-shop.css"
-// import { FcFilledFilter } from "react-icons/fc"
+import { FcFilledFilter } from "react-icons/fc"
 
 const ProdShop = ({ data,hideCat}) => {
   const [filter, setFilter] = useState(false);
@@ -11,7 +11,7 @@ const ProdShop = ({ data,hideCat}) => {
     <>
       <div className="shop-container">
         <div className="shop-filter-btn" onClick={() => setFilter(prev => prev = !prev)}>
-          {/* <FcFilledFilter /> */}
+          <FcFilledFilter />
         </div>
         <div className="shop-content">
           {
