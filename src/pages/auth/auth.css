@@ -3,7 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem auto;
+    margin: auto auto;
+}
+.auth{
+    margin: 1.7rem auto;
 }
 .auth-logo{
     display: flex;

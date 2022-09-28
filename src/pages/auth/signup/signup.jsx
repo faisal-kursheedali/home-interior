@@ -12,6 +12,7 @@ const Signup = () => {
   
   return (
     <div className="auth-container">
+      <div className="auth">
       <div className="auth-logo">
         <img className="auth-logo-img" alt='' src={`${window.location.origin}/assets/logo.webp`}/>
         <span className="auth-brand">Interior</span>
@@ -70,6 +71,7 @@ const Signup = () => {
       <div className="auth-end-txt-container">
         <div className="auth-end-txt">
           if you have account <a href="/login" className="auth-link">login</a>
+        </div>
         </div>
         </div>
     </div>

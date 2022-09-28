@@ -18,6 +18,7 @@ const ForgetPassword = () => {
   
   return (
     <div className="auth-container">
+      <div className="auth">
       <div className="auth-logo">
         <img className="auth-logo-img" alt='' src={`${window.location.origin}/assets/logo.webp`}/>
         <span className="auth-brand">Interior</span>
@@ -64,6 +65,7 @@ const ForgetPassword = () => {
         </div>
         <div className="auth-end-txt">
           if you don't have account <a href="/signup" className="auth-link">signup</a>
+        </div>
         </div>
         </div>
     </div>
