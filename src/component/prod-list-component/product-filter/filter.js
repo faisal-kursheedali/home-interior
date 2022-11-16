@@ -17,6 +17,9 @@ const FilterFnc=(data)=>{
      if (fState.price) {
         newData=newData.filter(i=>i.price<=fState.price)
     }
+    if(fState.sort){
+        newData=newData.slice().sort((a,b)=>fState.sort ==="lowtoheigh"?a.price-b.price:b.price-a.price)
+    }
     return newData
 }
 

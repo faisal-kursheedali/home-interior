@@ -3,7 +3,8 @@ const initialState={
     rating:"",
     search:"",
     catagory:"",
-    price:""
+    price:"",
+    sort:"",
 }
 
 const FilterSlice=createSlice({
@@ -28,9 +29,12 @@ const FilterSlice=createSlice({
         },
         setPrice:(state,action)=>{
             state.price=action.payload;
+        },
+        setSort:(state,action)=>{
+            state.sort=action.payload;
         }
     }
 })
 
-export const {setCatagory,setRating,setSearch,clearFilter,setPrice}=FilterSlice.actions;
+export const {setCatagory,setRating,setSearch,clearFilter,setPrice,setSort}=FilterSlice.actions;
 export default FilterSlice.reducer;

@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { AiFillStar } from "react-icons/ai"
 import { useDispatch } from 'react-redux'
-import { clearFilter, setCatagory, setPrice, setRating, setSearch } from '../../../app/feature/filter'
+import { clearFilter, setCatagory, setPrice, setRating, setSearch , setSort} from '../../../app/feature/filter'
 import { setProdMsg } from '../../../app/feature/product'
 import "./prod-filter.css"
 
@@ -66,6 +66,19 @@ const ProdFilter = ({hideCatagory}) => {
                 </li>
               </ul>
             </div>
+            </div>
+            <div className="prod-filter-catagory-head prod-filter-sub-head">sort</div>
+            <div className="filter-type-content">
+                {
+                  !hideCatagory?<select name="filter-catagory" className='prod-filter-catagory-select' id="" onChange={(e)=>{
+                    dispatch(setSort(e.target.value))
+                  }}>
+                    <option value="" className='prod-filter-catagory-option'>select the option</option>
+                    <option value="lowtoheigh" className='prod-filter-catagory-option'>Low to high</option>
+                    <option value="heighttolow" className='prod-filter-catagory-option'>High to low</option>
+                  </select>:""
+                }
+              
             </div>
             <div className="prod-filter-search prod-filter-type">
 
