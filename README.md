@@ -1,7 +1,9 @@
-## Interior
+## 🏠 Interior
 
 
 ![interior-logo](https://user-images.githubusercontent.com/85350108/201909408-b15b5276-c93b-489b-b046-bcc0b326c30d.png)
+<br><br>
+![home-interior-demo2](https://user-images.githubusercontent.com/85350108/205493427-7b0a24cf-d770-4738-b136-60a308f719e6.png)
 
 
 <h3>Interior</h3> 
